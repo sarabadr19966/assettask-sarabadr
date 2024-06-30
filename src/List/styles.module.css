@@ -1,12 +1,20 @@
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .headerContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 40px;
+  width: 100%;
+  gap: 12px;
 }
 
 .filterContainer {
+  width: 100%;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  justify-content: space-between;
 }

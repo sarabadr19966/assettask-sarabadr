@@ -62,19 +62,21 @@ const ListPage = () => {
     console.log(e);
   };
   return (
-    <div className={styles.headerContainer}>
-      <SearchBar />
-      <div className={styles.filterContainer}>
-        <CustomSelect
-          options={options}
-          placeHolder="Select Categories"
-          onChange={(e) => handleChangeSelect(e)}
-        />
-        <CustomSelect
-          options={options}
-          placeHolder="Select Sub Categories"
-          onChange={(e) => handleChangeSelect(e)}
-        />
+    <div className={styles.wrapper}>
+      <div className={styles.headerContainer}>
+        <SearchBar />
+        <div className={styles.filterContainer}>
+          <CustomSelect
+            options={options}
+            placeHolder="Select Categories"
+            onChange={(e) => handleChangeSelect(e)}
+          />
+          <CustomSelect
+            options={options}
+            placeHolder="Select Sub Categories"
+            onChange={(e) => handleChangeSelect(e)}
+          />
+        </div>
       </div>
     </div>
   );

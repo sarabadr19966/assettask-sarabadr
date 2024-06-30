@@ -1,0 +1,120 @@
+.dropdownContainer {
+  text-align: left;
+  border: 1px solid var(--neutral_300);
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 8px;
+  width: 100%;
+  flex-grow: 1;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+  &:focus {
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-color: var(--prim_600);
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+.dropdownContainer .dropdownInput {
+  padding: 13px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+
+.dropdownContainer .dropdownInput .dropdownSelectedValue.placeholder {
+  color: var(--neutral_300);
+}
+
+.dropdownContainer .dropdownTool {
+  display: flex;
+  align-items: center;
+}
+.dropdownContainer .dropdownTool svg {
+  transition: all 0.2s ease-in-out;
+  fill: var(--neutral_300);
+}
+
+.dropdownContainer .dropdownTool svg.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdownContainer .dropdownMenu {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  position: absolute;
+  top: 42px;
+  transform: translateY(6px);
+  border: 1px solid var(--neutral_300);
+  border-radius: 8px;
+  overflow: auto;
+  background-color: #fff;
+  z-index: 99;
+  max-height: 250px;
+  min-height: 50px;
+}
+
+.dropdownContainer .dropdownMenu::-webkit-scrollbar {
+  width: 5px;
+}
+
+.dropdownContainer .dropdownMenu::-webkit-scrollbar-track {
+  background: none;
+}
+
+.dropdownContainer .dropdownMenu::-webkit-scrollbar-thumb {
+  background: var(--neutral_200);
+  border-radius: 8px;
+}
+
+.dropdownContainer .dropdownMenu::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral_300);
+}
+
+.dropdownContainer .dropdownItem {
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: background-color 0.35s ease;
+  color: var(--text_color);
+  border-radius: 8px;
+}
+
+.dropdownContainer .dropdownItem:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.dropdownContainer .dropdownItem:hover {
+  background-color: rgba(130, 134, 139, 0.05);
+  color: var(--prim_600);
+}
+
+.dropdownContainer .dropdownItem.selected {
+  background-color: rgba(116, 94, 197, 0.075);
+  color: var(--prim_600);
+  font-weight: 600;
+}
+
+.dropdownContainer .dropdownTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.dropdownContainer .dropdownTagItem {
+  background-color: var(--prim_600);
+  color: #fff;
+  font-size: 1rem;
+  padding: 4px 4px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdownContainer .dropdownTagClose {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
