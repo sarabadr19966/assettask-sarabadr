@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
-  background-color: white;
-  padding: 10px 20px;
+  background-color: var(--shades_0);
+  padding: 12px 10px;
   width: 100%;
   align-items: center;
   border: 1px solid var(--neutral_300);
@@ -24,5 +24,6 @@
   color: var(--text_color);
   &::-webkit-input-placeholder {
     color: var(--neutral_300);
+    padding: 4px;
   }
 }

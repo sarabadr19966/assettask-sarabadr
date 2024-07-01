@@ -2,7 +2,6 @@ const NoDataIcon = () => {
   return (
     <svg
       viewBox="0 0 32 32"
-      enable-background="new 0 0 32 32"
       id="_x3C_Layer_x3E_"
       version="1.1"
       fill="#745ec5"
@@ -10,11 +9,11 @@ const NoDataIcon = () => {
       height={250}
       stroke="#745ec5"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
@@ -44,9 +43,9 @@ const NoDataIcon = () => {
                 fill="none"
                 id="XMLID_4109_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
                 x1="23.43"
                 x2="21.214"
                 y1="23.401"
@@ -57,9 +56,9 @@ const NoDataIcon = () => {
                 fill="none"
                 id="XMLID_4108_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></path>{" "}
               <circle
                 cx="13"
@@ -68,36 +67,36 @@ const NoDataIcon = () => {
                 id="XMLID_4107_"
                 r="11.5"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></circle>{" "}
               <path
                 d=" M12,15.521c0-0.55,0.45-1,1-1s1,0.45,1,1"
                 fill="none"
                 id="XMLID_4106_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></path>{" "}
               <path
                 d=" M17.5,13c0.27,0,0.5,0.23,0.5,0.5S17.77,14,17.5,14S17,13.77,17,13.5S17.23,13,17.5,13z"
                 fill="none"
                 id="XMLID_4105_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></path>{" "}
               <path
                 d=" M8.5,13C8.77,13,9,13.23,9,13.5S8.77,14,8.5,14S8,13.77,8,13.5S8.23,13,8.5,13z"
                 fill="none"
                 id="XMLID_4104_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></path>{" "}
             </g>{" "}
             <g id="XMLID_4096_">
@@ -106,9 +105,9 @@ const NoDataIcon = () => {
                 fill="none"
                 id="XMLID_4102_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
                 x1="23.43"
                 x2="21.214"
                 y1="23.401"
@@ -119,9 +118,9 @@ const NoDataIcon = () => {
                 fill="none"
                 id="XMLID_4101_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></path>{" "}
               <circle
                 cx="13"
@@ -130,36 +129,36 @@ const NoDataIcon = () => {
                 id="XMLID_4100_"
                 r="11.5"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></circle>{" "}
               <path
                 d=" M12,15.521c0-0.55,0.45-1,1-1s1,0.45,1,1"
                 fill="none"
                 id="XMLID_4099_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></path>{" "}
               <path
                 d=" M17.5,13c0.27,0,0.5,0.23,0.5,0.5S17.77,14,17.5,14S17,13.77,17,13.5S17.23,13,17.5,13z"
                 fill="none"
                 id="XMLID_4098_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></path>{" "}
               <path
                 d=" M8.5,13C8.77,13,9,13.23,9,13.5S8.77,14,8.5,14S8,13.77,8,13.5S8.23,13,8.5,13z"
                 fill="none"
                 id="XMLID_4097_"
                 stroke="#745ec5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-miterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
               ></path>{" "}
             </g>{" "}
           </g>{" "}

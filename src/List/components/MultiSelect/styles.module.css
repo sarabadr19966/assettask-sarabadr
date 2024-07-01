@@ -6,7 +6,7 @@
   border-radius: 8px;
   width: 100%;
   flex-grow: 1;
-  background-color: white;
+  background-color: var(--shades_0);
   cursor: pointer;
   outline: none;
   &:focus {
@@ -51,7 +51,7 @@
   border: 1px solid var(--neutral_300);
   border-radius: 8px;
   overflow: auto;
-  background-color: #fff;
+  background-color: var(--shades_0);
   z-index: 99;
   max-height: 250px;
   min-height: 50px;
@@ -105,7 +105,7 @@
 
 .dropdownContainer .dropdownTagItem {
   background-color: var(--prim_600);
-  color: #fff;
+  color: var(--shades_0);
   font-size: 1rem;
   padding: 4px;
   border-radius: 8px;

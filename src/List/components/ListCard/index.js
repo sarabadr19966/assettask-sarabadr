@@ -1,7 +1,7 @@
-import React from "react";
 import styles from "./styles.module.css";
 import NoDataIcon from "../../../assets/imgs/noDataIcon";
-function ListCard() {
+
+function ListCard({ items }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.listHeader}>
@@ -9,67 +9,22 @@ function ListCard() {
         <span>Category</span>
         <span>Sub Category</span>
       </div>
-      <div className={styles.listContent}>
-        {/* <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
+      {items?.length > 0 ? (
+        <div className={styles.listContent}>
+          {items.map((item) => (
+            <div className={styles.listItem} key={item.id}>
+              <span>{item.name}</span>
+              <span>{item.category}</span>
+              <span>{item.subcategory}</span>
+            </div>
+          ))}
         </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
+      ) : (
+        <div className={styles.noData}>
+          <NoDataIcon />
+          <span>No results found</span>
         </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div>
-        <div className={styles.listItem}>
-          <span>Name</span>
-          <span>Category</span>
-          <span>Sub Category</span>
-        </div> */}
-      </div>
-      <div className={styles.noData}>
-        <NoDataIcon />
-        <span>No results found</span>
-      </div>
+      )}
     </div>
   );
 }

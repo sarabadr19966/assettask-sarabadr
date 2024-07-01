@@ -23,7 +23,6 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
 
   const handleInputClick = (e) => {
     setShowMenu(!showMenu);
-    console.log(inputRef.current);
   };
 
   const getDisplay = () => {
@@ -33,11 +32,8 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
     return (
       <div className={styles.dropdownTags}>
         {selectedValue.map((option, index) => (
-          <div
-            key={`${option.value}-${index}`}
-            className={styles.dropdownTagItem}
-          >
-            {option.label}
+          <div key={`${option}-${index}`} className={styles.dropdownTagItem}>
+            {option}
             <span
               onClick={(e) => onTagRemove(e, option)}
               className={styles.dropdownTagClose}
@@ -51,7 +47,7 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
   };
 
   const removeOption = (option) => {
-    return selectedValue.filter((o) => o.value !== option.value);
+    return selectedValue.filter((opt) => opt !== option);
   };
 
   const onTagRemove = (e, option) => {
@@ -63,7 +59,7 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
 
   const onItemClick = (option) => {
     let newValue;
-    if (selectedValue.findIndex((o) => o.value === option.value) >= 0) {
+    if (selectedValue.findIndex((opt) => opt === option) >= 0) {
       newValue = removeOption(option);
     } else {
       newValue = [...selectedValue, option];
@@ -78,7 +74,7 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
       return false;
     }
 
-    return selectedValue.filter((o) => o.value === option.value).length > 0;
+    return selectedValue.filter((opt) => opt === option).length > 0;
   };
 
   return (
@@ -109,12 +105,12 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
           {options.map((option) => (
             <div
               onClick={() => onItemClick(option)}
-              key={option.value}
+              key={option}
               className={`${styles.dropdownItem} ${
                 isSelected(option) && styles.selected
               }`}
             >
-              {option.label}
+              {option}
             </div>
           ))}
         </div>
