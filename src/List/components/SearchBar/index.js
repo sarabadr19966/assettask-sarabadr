@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import SearchIcon from "../../../assets/imgs/search.svg";
+import SearchIcon from "../../../assets/imgs/search.js";
 function SearchBar({ searchTerm, setSearchTerm }) {
   return (
     <div className={styles.wrapper}>
@@ -10,7 +10,7 @@ function SearchBar({ searchTerm, setSearchTerm }) {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <img src={SearchIcon} alt="search-icon" className={styles.searchIcon} />
+      <SearchIcon className={styles.searchIcon} />
     </div>
   );
 }

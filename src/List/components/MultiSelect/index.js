@@ -6,7 +6,7 @@ import styles from "./styles.module.css";
 const CustomSelect = ({ placeHolder, options, onChange }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [selectedValue, setSelectedValue] = useState([]);
-  const inputRef = useRef(); // Reference to the custom select input element
+  const inputRef = useRef();
 
   useEffect(() => {
     const handler = (e) => {
@@ -95,7 +95,7 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
         </div>
         <div className={styles.dropdownTools}>
           <div className={styles.dropdownTool}>
-            <DropdownIcon isOpen={showMenu} rotate={styles.rotate} />
+            <DropdownIcon className={showMenu ? styles.rotate : ""} />
           </div>
         </div>
       </div>

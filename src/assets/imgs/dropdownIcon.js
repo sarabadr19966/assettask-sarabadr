@@ -1,11 +1,11 @@
-const DropdownIcon = ({ isOpen, rotate }) => {
+const DropdownIcon = (props) => {
   return (
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      className={isOpen ? rotate : ""}
       width={20}
       height={20}
+      {...props}
     >
       <rect x="0" fill="none" width="24" height="24" />
 
