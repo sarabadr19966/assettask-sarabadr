@@ -24,7 +24,6 @@
 
 .listHeader span {
   padding: 20px 15px;
-  text-align: left;
   font-weight: 500;
   font-size: 1rem;
   color: var(--shades_0);
@@ -64,7 +63,6 @@
 
 .listItem span {
   padding: 20px 15px;
-  text-align: left;
   font-size: 1rem;
 }
 

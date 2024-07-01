@@ -78,12 +78,12 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
   };
 
   return (
-    <div className={styles.dropdownContainer} tabIndex={0}>
-      <div
-        ref={inputRef}
-        onClick={handleInputClick}
-        className={styles.dropdownInput}
-      >
+    <div
+      className={`${styles.dropdownContainer} ${showMenu ? styles.active : ""}`}
+      tabIndex={0}
+      ref={inputRef}
+    >
+      <div onClick={handleInputClick} className={styles.dropdownInput}>
         <div
           className={`${styles.dropdownSelectedValue} ${
             !selectedValue || selectedValue.length === 0
@@ -100,21 +100,21 @@ const CustomSelect = ({ placeHolder, options, onChange }) => {
         </div>
       </div>
 
-      {showMenu && (
-        <div className={styles.dropdownMenu}>
-          {options.map((option) => (
-            <div
-              onClick={() => onItemClick(option)}
-              key={option}
-              className={`${styles.dropdownItem} ${
-                isSelected(option) && styles.selected
-              }`}
-            >
-              {option}
-            </div>
-          ))}
-        </div>
-      )}
+      <div
+        className={`${styles.dropdownMenu} ${showMenu ? styles.showMenu : ""}`}
+      >
+        {options.map((option) => (
+          <div
+            onClick={() => onItemClick(option)}
+            key={option}
+            className={`${styles.dropdownItem} ${
+              isSelected(option) && styles.selected
+            }`}
+          >
+            {option}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

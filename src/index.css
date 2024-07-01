@@ -3,7 +3,7 @@
   margin: 0;
 }
 body {
-  font-family: "Cairo", Helvetica, Arial, serif;
+  font-family: "Rubik", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: var(--text_color);
@@ -18,39 +18,11 @@ body {
   --prim_600: #745ec5;
 
   /* Neutral/Gray */
-  --neutral_50: #f7f8fa;
-  --neutral_100: #e9ebf2;
   --neutral_200: #dadfeb;
   --neutral_300: #ccd2e0;
   --neutral_400: #eff0f0;
-  --neutral_500: #7280a3;
-  --neutral_600: #59688e;
-  --neutral_700: #324575;
-  --neutral_800: #15295c;
-  --neutral_900: #021442;
   /* Shades/White */
   --shades_0: #ffffff;
   /* Shades/Black */
-  --shades_100: #000000;
   --text_color: #212121;
-}
-
-.el-lvl-1 {
-  box-shadow: 0px 0px 0px 1px var(--neutral_100);
-}
-.el-lvl-2 {
-  box-shadow: 0px 0px 0px 1px var(--neutral_100),
-    0px 2px 6px rgba(9, 43, 76, 0.06);
-}
-.el-lvl-3 {
-  box-shadow: 0px 0px 0px 1px var(--neutral_100),
-    0px 0px 16px rgba(9, 43, 76, 0.08);
-}
-.el-lvl-4 {
-  box-shadow: 0px 0px 0px 1px var(--neutral_100),
-    0px 6px 20px rgba(9, 43, 76, 0.1);
-}
-.el-lvl-5 {
-  box-shadow: 0px 0px 0px 1px var(--neutral_100),
-    0px 8px 24px rgba(9, 43, 76, 0.12);
 }

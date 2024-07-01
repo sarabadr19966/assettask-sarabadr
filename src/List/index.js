@@ -5,22 +5,9 @@ import ListCard from "./components/ListCard";
 import { getItemsData } from "../api/service";
 import Spinner from "../assets/imgs/spinner";
 import styles from "./styles.module.css";
+import { categoriesOpts, subCategoriesOpts } from "./utils";
 
 const ListPage = () => {
-  const categoriesOpts = [
-    "Category 1",
-    "Category 2",
-    "Category 3",
-    "Category 4",
-  ];
-
-  const subCategoriesOpts = [
-    "Subcategory A",
-    "Subcategory B",
-    "Subcategory C",
-    "Subcategory D",
-  ];
-
   const [filteredItems, setFilteredItems] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [categories, setCategories] = useState([]);
@@ -52,13 +39,16 @@ const ListPage = () => {
     rank = handleSearchFilter(rank, frequencyCounter);
     rank = handleCategoriesFilter(rank, frequencyCounter);
     rank = handleSubCategoriesFilter(rank, frequencyCounter);
-    const keysArr = [];
-    Object.keys(frequencyCounter).forEach((key) => {
-      if (frequencyCounter[key] == rank) keysArr.push(key);
-    });
-    const ItemsArr = items.filter((item) => keysArr.includes(String(item.id)));
-    if (rank) setFilteredItems(ItemsArr);
-    else setFilteredItems(items);
+    if (rank) {
+      const keysArr = [];
+      Object.keys(frequencyCounter).forEach((key) => {
+        if (frequencyCounter[key] === rank) keysArr.push(key);
+      });
+      const ItemsArr = items.filter((item) =>
+        keysArr.includes(String(item.id))
+      );
+      setFilteredItems(ItemsArr);
+    } else setFilteredItems(items);
   };
 
   const handleSearchFilter = (rank, frequencyCounter) => {
@@ -67,7 +57,7 @@ const ListPage = () => {
       items.forEach((item) => {
         if (item.name.toLowerCase().includes(searchTerm.toLowerCase())) {
           frequencyCounter[String(item.id)] =
-            (frequencyCounter[String(item.id)] || 0) + 1 || 1;
+            (frequencyCounter[String(item.id)] || 0) + 1;
         }
       });
     }
@@ -80,7 +70,7 @@ const ListPage = () => {
       items.forEach((item) => {
         if (categories.includes(item.category)) {
           frequencyCounter[String(item.id)] =
-            (frequencyCounter[String(item.id)] || 0) + 1 || 1;
+            (frequencyCounter[String(item.id)] || 0) + 1;
         }
       });
     }
@@ -93,7 +83,7 @@ const ListPage = () => {
       items.forEach((item) => {
         if (subCategories.includes(item.subcategory)) {
           frequencyCounter[String(item.id)] =
-            (frequencyCounter[String(item.id)] || 0) + 1 || 1;
+            (frequencyCounter[String(item.id)] || 0) + 1;
         }
       });
     }

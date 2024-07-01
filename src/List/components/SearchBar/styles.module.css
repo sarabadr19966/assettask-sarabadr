@@ -10,7 +10,6 @@
   &:focus-within {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     border-color: var(--prim_600);
-
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
   }
 }
@@ -25,5 +24,6 @@
   &::-webkit-input-placeholder {
     color: var(--neutral_300);
     padding: 4px;
+    font-family: "Rubik", sans-serif;
   }
 }
