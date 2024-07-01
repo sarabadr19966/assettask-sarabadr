@@ -1,0 +1,82 @@
+.wrapper {
+  width: 100%;
+  background-color: white;
+  margin-top: 12px;
+  border: 1px solid var(--neutral_300);
+  border-radius: 8px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  background-color: var(--prim_600);
+  flex-shrink: 0;
+}
+
+.listHeader span {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.listContent::-webkit-scrollbar {
+  width: 5px;
+}
+
+.listContent::-webkit-scrollbar-track {
+  background: none;
+}
+
+.listContent::-webkit-scrollbar-thumb {
+  background: var(--neutral_200);
+  border-radius: 8px;
+}
+
+.listContent::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral_300);
+}
+.listContent {
+  overflow-y: auto;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.listItem:not(:last-of-type) {
+  border-bottom: 1px solid var(--neutral_300);
+}
+
+.listItem span {
+  padding: 20px 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.noData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  height: 100%;
+  width: 100%;
+  color: var(--prim_600);
+  font-size: 1.5rem;
+  font-weight: 600;
+}

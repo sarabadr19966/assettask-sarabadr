@@ -3,8 +3,6 @@
   background-color: white;
   padding: 10px 20px;
   width: 100%;
-  box-sizing: border-box;
-
   align-items: center;
   border: 1px solid var(--neutral_300);
   border-radius: 8px;
